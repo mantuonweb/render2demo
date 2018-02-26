@@ -4,6 +4,9 @@
 	  <div class="panel-body" id="main-container" scroller (onReachedBottom)="loadMore();" [thrashhold]="20">
 	  		<ul class="list-group">
 			  <li class="list-group-item" *ngFor="let item of arr1">{{item}}</li>
+			   <li class="list-group-item">
+			  	<i class="glyphicon glyphicon-repeat gly-spin"></i>
+			  </li>
 			</ul>
 	  </div>
 	</div>
