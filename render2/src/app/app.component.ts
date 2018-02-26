@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	title = 'app works!';
-	arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+	arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+	arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 	loadMore() {
-		this.arr.push.apply(this.arr, this.arr);
+		this.arr1.push.apply(this.arr1, this.arr2);
 	}
 }
