@@ -1,7 +1,7 @@
 <div style="margin:50px 20px;">
-	<div class="panel panel-primary" appLoadmore>
+	<div class="panel panel-primary" >
 	  <div class="panel-heading">Panel Head</div>
-	  <div class="panel-body" id="main-container">
+	  <div class="panel-body" id="main-container" scroller (onReachedBottom)="loadMore();">
 	  		<ul class="list-group">
 			  <li class="list-group-item" *ngFor="let item of arr">{{item}}</li>
 			</ul>
